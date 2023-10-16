@@ -1,1 +1,12 @@
-
+a = int(input())
+b = int(input())
+c = int(input())
+result1 = (a + b + c) / 3                                 #среднее арифметическое
+result2 = 3 / (a ** (-1) + b ** (-1) + c ** (-1))         #среднее гармонческое
+result3 = a + b + c - max(a, b, c) - min(a, b, c)         #медиана
+result4 = (max(a, b, c) ** min(a, b, c)) / result3        #задание d
+r1 = round(result1, 6)                                    #окруляем
+r2 = round(result2, 6)
+r3 = round(result3, 6)
+r4 = round(result4, 6)
+print(r1, r2, r3, r4, sep= ';')
