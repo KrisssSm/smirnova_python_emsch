@@ -1,0 +1,7 @@
+x = float(input())
+print(x - int(x))
+
+или 
+
+x = float(input())
+print(x % 1) 
